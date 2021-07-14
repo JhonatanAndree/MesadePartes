@@ -75,40 +75,40 @@
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <div class="form-material floating">
-                                            <input type="text" class="form-control" id="txtnomb" name="txtnomb">
-                                            <label for="txtnomb">Nombres</label>
+                                            <input type="text" class="form-control" id="usu_nom" name="usu_nom">
+                                            <label for="usu_nom">Nombres</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <div class="form-material floating">
-                                            <input type="text" class="form-control" id="txtape" name="txtape">
-                                            <label for="txtape">Apellidos</label>
+                                            <input type="text" class="form-control" id="usu_ape" name="usu_ape">
+                                            <label for="usu_ape">Apellidos</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <div class="form-material floating">
-                                            <input type="email" class="form-control" id="txtemail" name="txtemail">
-                                            <label for="txtemail">Correo Electrónico</label>
+                                            <input type="email" class="form-control" id="usu_correo" name="usu_correo">
+                                            <label for="usu_correo">Correo Electrónico</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <div class="form-material floating">
-                                            <input type="password" class="form-control" id="txtpassword1" name="txtpassword1">
-                                            <label for="txtpassword1">Contraseña</label>
+                                            <input type="password" class="form-control" id="usu_pass1" name="usu_pass1">
+                                            <label for="usu_pass1">Contraseña</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <div class="col-12">
                                         <div class="form-material floating">
-                                            <input type="password" class="form-control" id="txtpassword2" name="txtpassword2">
-                                            <label for="txtpassword2">Confirmar contraseña</label>
+                                            <input type="password" class="form-control" id="usu_pass2" name="usu_pass2">
+                                            <label for="usu_pass2">Confirmar contraseña</label>
                                         </div>
                                     </div>
                                 </div>
@@ -194,6 +194,8 @@
 
     <!-- Page JS Code -->
     <script src="../public/assets/js/pages/op_auth_signup.js"></script>
+    <!-- Registrarse -->
+    <script type="text/javascript" src="registrarse.js"></script>
 
 </body>
 
