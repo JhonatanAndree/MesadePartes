@@ -41,8 +41,8 @@ if (isset($_SESSION["usu_id"])) {
             <?php require_once("../Mainheader/mainheader.php"); ?>
             <main id="main-container">
                 <div class="content">
-                    <h2 class="content-heading">Blank <small>Get Started</small></h2>
-                    <p>Create your own awesome project!</p>
+                    <!-- <h2 class="content-heading">Blank <small>Get Started</small></h2>
+                    <p>Create your own awesome project!</p> -->
                 </div>
             </main>
             <?php require_once("../MainFooter/mainfooter.php"); ?>

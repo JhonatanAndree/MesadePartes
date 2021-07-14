@@ -1,11 +1,13 @@
 <?php
 
 session_start();
-class Conectar {
+class Conectar
+{
     protected $dbh;
-    protected function Conexion(){
+    protected function Conexion()
+    {
         try {
-            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesadepartes","root","");
+            $conectar = $this->dbh = new PDO("mysql:local=localhost;dbname=mesadepartes", "root", "");
             return $conectar;
         } catch (Exception $e) {
             print "¡Error en la base de datos !: " . $e->getMessage() . "<br/>";
@@ -13,13 +15,13 @@ class Conectar {
         }
     }
 
-    public function set_names(){
+    public function set_names()
+    {
         return $this->dbh->query("SET NAMES 'utf8'");
     }
 
-    public static function ruta(){
+    public static function ruta()
+    {
         return "http://localhost/mesadepartes/";
     }
 }
-
-?>
