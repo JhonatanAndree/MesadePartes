@@ -1,9 +1,16 @@
-<!doctype html>
-<html lang="es" class="no-focus">
+<?php
+require_once("../../config/conexion.php");
+if (isset($_SESSION["usu_id"])) {
+?>
+
+    <!doctype html>
+    <html lang="es" class="no-focus">
+
     <head>
         <?php require_once('../Mainhead/mainhead.php'); ?>
         <title>Home | Mesa de partes</title>
     </head>
+
     <body>
         <div id="page-container" class="sidebar-o side-scroll page-header-modern main-content-boxed">
             <aside id="side-overlay">
@@ -31,15 +38,21 @@
                     </div>
                 </div>
             </nav>
-            <?php require_once("../Mainheader/mainheader.php");?>
+            <?php require_once("../Mainheader/mainheader.php"); ?>
             <main id="main-container">
                 <div class="content">
                     <h2 class="content-heading">Blank <small>Get Started</small></h2>
                     <p>Create your own awesome project!</p>
                 </div>
             </main>
-            <?php require_once("../MainFooter/mainfooter.php");?>
+            <?php require_once("../MainFooter/mainfooter.php"); ?>
         </div>
-        <?php require_once("../MainJs/mainjs.php");?>
+        <?php require_once("../MainJs/mainjs.php"); ?>
     </body>
-</html>
+
+    </html>
+<?php
+} else {
+    header("Location:" . Conectar::ruta() . "index.php");
+}
+?>

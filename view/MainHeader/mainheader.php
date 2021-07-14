@@ -96,7 +96,7 @@
             <!-- User Dropdown -->
             <div class="btn-group" role="group">
                 <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    J. Smith<i class="fa fa-angle-down ml-5"></i>
+                    <?php echo $_SESSION["usu_nom"] . " " . $_SESSION["usu_ape"] ?><i class="fa fa-angle-down ml-5"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-right min-width-150" aria-labelledby="page-header-user-dropdown">
                     <a class="dropdown-item" href="be_pages_generic_profile.html">
