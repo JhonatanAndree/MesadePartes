@@ -72,68 +72,73 @@
                             <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.js) -->
                             <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
                             <div class="px-30">
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <div class="form-material floating">
-                                            <input type="text" class="form-control" id="usu_nom" name="usu_nom">
-                                            <label for="usu_nom">Nombres</label>
+                                <form method="pos" id="usuario_form">
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="text" class="form-control" id="usu_nom" name="usu_nom" required>
+                                                <label for="usu_nom">Nombres</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <div class="form-material floating">
-                                            <input type="text" class="form-control" id="usu_ape" name="usu_ape">
-                                            <label for="usu_ape">Apellidos</label>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="text" class="form-control" id="usu_ape" name="usu_ape" required>
+                                                <label for="usu_ape">Apellidos</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <div class="form-material floating">
-                                            <input type="email" class="form-control" id="usu_correo" name="usu_correo">
-                                            <label for="usu_correo">Correo Electrónico</label>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="email" class="form-control" id="usu_correo" name="usu_correo" required>
+                                                <label for="usu_correo">Correo Electrónico</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <div class="form-material floating">
-                                            <input type="password" class="form-control" id="usu_pass1" name="usu_pass1">
-                                            <label for="usu_pass1">Contraseña</label>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="password" class="form-control" id="usu_pass1" name="usu_pass1" required>
+                                                <label for="usu_pass1">Contraseña</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <div class="form-material floating">
-                                            <input type="password" class="form-control" id="usu_pass2" name="usu_pass2">
-                                            <label for="usu_pass2">Confirmar contraseña</label>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <div class="form-material floating">
+                                                <input type="password" class="form-control" id="usu_pass2" name="usu_pass2" required>
+                                                <label for="usu_pass2">Confirmar contraseña</label>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-12">
-                                        <label class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
-                                            <span class="custom-control-indicator"></span>
-                                            <span class="custom-control-description">Estoy de acuerdo con los términos y condiciones</span>
-                                        </label>
+                                    <div class="form-group row">
+                                        <div class="col-12">
+                                            <label class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms" required>
+                                                <span class="custom-control-indicator"></span>
+                                                <span class="custom-control-description">Estoy de acuerdo con los términos y condiciones</span>
+                                            </label>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-sm btn-hero btn-alt-success">
-                                        <i class="fa fa-plus mr-10"></i> Crear Cuenta
-                                    </button>
-                                    <div class="mt-30">
-                                        <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="#" data-toggle="modal" data-target="#modal-terms">
-                                            <i class="fa fa-book text-muted mr-5"></i> Leer los términos
+                                    <div class="form-group">
+                                        <button type="submit" name="action" value="add" id="btnguardar" class="btn btn-sm btn-hero btn-alt-success">
+                                            <i class="fa fa-plus mr-10"></i> Crear Cuenta
+                                        </button>
+                                        <div class="mt-30">
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="#" data-toggle="modal" data-target="#modal-terms">
+                                                <i class="fa fa-book text-muted mr-5"></i> Leer los términos
+                                            </a>
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../">
+                                                <i class="fa fa-user text-muted mr-5"></i> Iniciar sesión
+                                            </a>
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../RecuperarContrasena/">
+                                            <i class="fa fa-warning mr-5"></i> Recuperar contraseña
                                         </a>
-                                        <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="../">
-                                            <i class="fa fa-user text-muted mr-5"></i> Iniciar sesión
-                                        </a>
+                                        </div>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                             <!-- END Sign Up Form -->
                         </div>
@@ -194,6 +199,8 @@
 
     <!-- Page JS Code -->
     <script src="../public/assets/js/pages/op_auth_signup.js"></script>
+    <!-- Mensaje -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Registrarse -->
     <script type="text/javascript" src="registrarse.js"></script>
 

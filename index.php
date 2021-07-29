@@ -142,7 +142,7 @@ if (isset($_POST["enviar"]) and $_POST["enviar"] == "si") {
                                             <i class="fa fa-plus mr-5"></i> Crear Cuenta
                                         </a>
                                         <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="RecuperarContrasena/">
-                                            <i class="fa fa-warning mr-5"></i> Olvidé mi contraseña
+                                            <i class="fa fa-warning mr-5"></i> Recuperar Contraseña
                                         </a>
                                     </div>
                                 </div>
