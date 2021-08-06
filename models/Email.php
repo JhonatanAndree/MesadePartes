@@ -16,13 +16,13 @@
             }
 
             $this->IsSMTP();
-            $this->Host = 'smtp.stackmail.com';
-            $this->Port = 465;
+            $this->Host = 'Colocar host';
+            $this->Port = 123;
             $this->SMTPAuth = true;
-            $this->Username = $this->tu_email = "contacto@mgp.edu.pe";
-            $this->Password = $this->tu_password = "Ys3a65115";
+            $this->Username = $this->tu_email = "colocar correo";
+            $this->Password = $this->tu_password = "Contraseña";
             $this->SMTPSecure = 'tsl';
-            $this->From = $this->tu_email="contacto@mgp.edu.pe";
+            $this->From = $this->tu_email="colocar correo";
             $this->CharSet='UTF8';
             $this->addAddress($usu_correo);
             $this->WordWrap = 50;
@@ -45,13 +45,13 @@
             }
 
             $this->IsSMTP();
-            $this->Host = 'smtp.stackmail.com';
-            $this->Port = 465;
+            $this->Host = 'colocar host';
+            $this->Port = 123;
             $this->SMTPAuth = true;
-            $this->Username = $this->tu_email = "contacto@mgp.edu.pe";
-            $this->Password = $this->tu_password = "Ys3a65115";
+            $this->Username = $this->tu_email = "colocar correo";
+            $this->Password = $this->tu_password = "colocar contraseña";
             $this->SMTPSecure = 'tls';
-            $this->From = $this->tu_email="contacto@mgp.edu.pe";
+            $this->From = $this->tu_email="colocar correo";
             $this->FromName = $this->tu_nombre="Registro Correcto";
             $this->CharSet='UTF8';
             $this->addAddress($usu_correo);
@@ -68,16 +68,16 @@
 
         public function solicitud($part_id,$usu_nom,$usu_ape){
             $this->IsSMTP();
-            $this->Host = 'smtp.stackmail.com';
-            $this->Port = 465;
+            $this->Host = 'colocar host';
+            $this->Port = 123;
             $this->SMTPAuth = true;
-            $this->Username = $this->tu_email = "contacto@mgp.edu.pe";
-            $this->Password = $this->tu_password = "Ys3a65115";
+            $this->Username = $this->tu_email = "colocar correo";
+            $this->Password = $this->tu_password = "colocar contraseña";
             $this->SMTPSecure = 'tls';
-            $this->From = $this->tu_email="contacto@mgp.edu.pe";
+            $this->From = $this->tu_email="colocar correo";
             $this->FromName = $this->tu_nombre="Nueva Solicitud";
             $this->CharSet='UTF8';
-            $this->addAddress("contacto@mgp.edu.pe");
+            $this->addAddress("colocar correo");
             $this->WordWrap = 50;
             $this->IsHTML(true);
             $this->Subject = "Nueva Solicitud";
